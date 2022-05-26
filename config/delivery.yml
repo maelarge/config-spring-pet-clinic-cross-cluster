@@ -49,7 +49,7 @@ spec:
           value: postgres
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details=always -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include=* -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: tapacr.azurecr.io/service-tool-kit-gke-1/apps-24-05-2022-14-59-18-722172403/crossppclaim-default@sha256:9ebe22af9b32e8f977c175cbc339cfb643a8bc53c04475a2cc411731101f8b3c
+        image: tapacr.azurecr.io/service-tool-kit-gke-1/apps-24-05-2022-14-59-18-722172403/crossppclaim-default@sha256:8fbce33a05e48b9e7ad447f5468753df15fbc9782f509ae5b6ff905e5e51aebf
         livenessProbe:
           httpGet:
             path: /livez
